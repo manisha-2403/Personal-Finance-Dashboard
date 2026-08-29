@@ -29,11 +29,10 @@ function Login() {
     try {
       setLoading(true);
 
-      const data = await loginUser({
+      await loginUser({
         email: email.trim(),
         password,
       });
-
 
       // ========================================
       // GO TO DASHBOARD
@@ -108,9 +107,7 @@ function Login() {
               <input
                 type="email"
                 value={email}
-                onChange={(e) =>
-                  setEmail(e.target.value)
-                }
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 autoComplete="email"
                 className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -127,9 +124,7 @@ function Login() {
               <input
                 type="password"
                 value={password}
-                onChange={(e) =>
-                  setPassword(e.target.value)
-                }
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter your password"
                 autoComplete="current-password"
                 className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -156,9 +151,7 @@ function Login() {
 
               <button
                 type="button"
-                onClick={() =>
-                  navigate("/register")
-                }
+                onClick={() => navigate("/register")}
                 className="text-blue-600 font-medium hover:underline"
               >
                 Create account

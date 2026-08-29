@@ -24,20 +24,19 @@ function EditTransactionModal({
     notes: "",
   });
 
-useEffect(() => {
-  if (transaction) {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setFormData({
-      id: transaction.id,
-      title: transaction.title,
-      amount: transaction.amount,
-      type: transaction.type,
-      category: transaction.category,
-      date: transaction.date,
-      notes: transaction.notes,
-    });
-  }
-}, [transaction]);
+  useEffect(() => {
+    if (transaction) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setFormData({
+        title: transaction.title,
+        amount: transaction.amount,
+        type: transaction.type,
+        category: transaction.category,
+        date: transaction.date,
+        notes: transaction.notes,
+      });
+    }
+  }, [transaction]);
 
   function handleChange(
     e: React.ChangeEvent<
@@ -94,6 +93,7 @@ useEffect(() => {
         >
 
           {/* TITLE */}
+
           <input
             name="title"
             value={formData.title}
@@ -104,6 +104,7 @@ useEffect(() => {
           />
 
           {/* AMOUNT */}
+
           <input
             name="amount"
             type="number"
@@ -115,6 +116,7 @@ useEffect(() => {
           />
 
           {/* TYPE */}
+
           <select
             name="type"
             value={formData.type}
@@ -131,6 +133,7 @@ useEffect(() => {
           </select>
 
           {/* CATEGORY */}
+
           <input
             name="category"
             value={formData.category}
@@ -141,6 +144,7 @@ useEffect(() => {
           />
 
           {/* DATE */}
+
           <input
             name="date"
             type="date"
@@ -151,6 +155,7 @@ useEffect(() => {
           />
 
           {/* NOTES */}
+
           <textarea
             name="notes"
             value={formData.notes}
@@ -161,6 +166,7 @@ useEffect(() => {
           />
 
           {/* BUTTONS */}
+
           <div className="flex justify-end gap-3">
 
             <button
