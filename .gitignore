@@ -1,67 +1,47 @@
-# ==============================
-# Environment variables
-# ==============================
-
-.env
-*.env
-
-
-# ==============================
 # Python
-# ==============================
-
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 
-.venv/
+# Virtual environment
 venv/
+.venv/
 env/
-ENV/
 
+# Environment variables
+.env
+.env.*
 
-# ==============================
-# SQLite database
-# ==============================
-
+# Database
 *.db
 *.sqlite
 *.sqlite3
 
+# IDE
+.vscode/
+.idea/
 
-# ==============================
+# OS
+.DS_Store
+Thumbs.db
+
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
 # Node
-# ==============================
-
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
-
-# ==============================
 # Build files
-# ==============================
-
 dist/
 build/
 
-
-# ==============================
-# IDE
-# ==============================
-
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-
-.idea/
-
-
-# ==============================
-# OS
-# ==============================
-
-.DS_Store
-Thumbs.db
+# Local files
+*.local

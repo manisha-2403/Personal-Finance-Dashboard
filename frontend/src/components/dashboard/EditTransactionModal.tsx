@@ -93,7 +93,6 @@ function EditTransactionModal({
         >
 
           {/* TITLE */}
-
           <input
             name="title"
             value={formData.title}
@@ -104,7 +103,6 @@ function EditTransactionModal({
           />
 
           {/* AMOUNT */}
-
           <input
             name="amount"
             type="number"
@@ -116,7 +114,6 @@ function EditTransactionModal({
           />
 
           {/* TYPE */}
-
           <select
             name="type"
             value={formData.type}
@@ -133,7 +130,6 @@ function EditTransactionModal({
           </select>
 
           {/* CATEGORY */}
-
           <input
             name="category"
             value={formData.category}
@@ -144,7 +140,6 @@ function EditTransactionModal({
           />
 
           {/* DATE */}
-
           <input
             name="date"
             type="date"
@@ -155,7 +150,6 @@ function EditTransactionModal({
           />
 
           {/* NOTES */}
-
           <textarea
             name="notes"
             value={formData.notes}
@@ -166,7 +160,6 @@ function EditTransactionModal({
           />
 
           {/* BUTTONS */}
-
           <div className="flex justify-end gap-3">
 
             <button
