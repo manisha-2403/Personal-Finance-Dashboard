@@ -119,7 +119,6 @@ https://personal-finance-dashboard-rufd.onrender.com/docs
 
 ## 🏗️ Architecture
 
-```text
 User
   │
   ▼
@@ -142,7 +141,6 @@ SQLite Database
 
 ## 🏗️ Project Structure
 
-```text
 Personal-Finance-Dashboard/
 │
 ├── backend/
@@ -178,7 +176,6 @@ Personal-Finance-Dashboard/
 └── README.md
 
 
-
 ### Dashboard
 
 <img width="1592" height="796" alt="Screenshot 2026-08-29 135005" src="https://github.com/user-attachments/assets/ad7d2e22-b69a-4033-8f6d-9afc2f77e3e6" />
@@ -194,4 +191,6 @@ Personal-Finance-Dashboard/
 ### Settings
 
 <img width="1587" height="807" alt="Screenshot 2026-08-29 135217" src="https://github.com/user-attachments/assets/56ecb413-0723-4401-8da1-cfd81e78bbb3" />
+
+
 
