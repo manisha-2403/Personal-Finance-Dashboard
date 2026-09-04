@@ -1,32 +1,79 @@
 # 💰 Personal Finance Dashboard
 
-A full-stack personal finance management web application that helps users track income, expenses, transactions, monthly budgets, reports, and financial insights through an interactive dashboard.
+A full-stack personal finance management web application designed to help users track income, expenses, transactions, monthly budgets, financial reports, and spending insights through an interactive dashboard.
 
-Built with **React, TypeScript, Tailwind CSS, FastAPI, Python, SQLAlchemy, SQLite, and JWT authentication**.
+The application includes secure JWT authentication, protected routes, transaction CRUD operations, budget management, financial analytics, CSV export, and a responsive React interface.
 
-## ✨ Features
+## 🚀 Live Demo
 
-- 🔐 User registration and login
-- 🔑 JWT-based authentication
-- 🛡️ Protected application routes
-- 💰 Track income and expenses
-- ➕ Add transactions
-- ✏️ Edit transactions
-- 🗑️ Delete transactions
-- 🔍 Search and filter transactions
-- 📊 Financial dashboard with income, expenses, and balance
-- 📈 Expense analytics
-- 🧾 Recent transaction overview
-- 💡 Financial insights
-- 🎯 Monthly budget management
-- 📉 Budget usage and remaining balance tracking
-- 📊 Financial reports
-- 🗂️ Expense analysis by category
-- 📅 Monthly report filtering
-- 📥 Export transactions to CSV
-- 👤 User profile page
-- ⚙️ User settings
-- 🚪 Secure logout
+🌐 **Live Application:**  
+https://personal-finance-dashboard-xi-two.vercel.app/
+
+⚙️ **Backend API:**  
+https://personal-finance-dashboard-rufd.onrender.com/
+
+📚 **API Documentation:**  
+https://personal-finance-dashboard-rufd.onrender.com/docs
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication & Security
+
+- User registration and login
+- JWT-based authentication
+- Password hashing
+- Protected application routes
+- Authenticated API requests
+- Secure logout
+- Automatic handling of expired/invalid authentication tokens
+
+### 💰 Transaction Management
+
+- Add income and expense transactions
+- Edit transactions
+- Delete transactions
+- View transaction history
+- Search transactions
+- Filter transactions
+- Categorize expenses
+- Persistent transaction storage
+
+### 📊 Financial Dashboard
+
+- Total balance calculation
+- Total income
+- Total expenses
+- Expense analytics
+- Recent transactions
+- Financial insights
+- Interactive charts
+
+### 🎯 Budget Management
+
+- Create monthly budgets
+- Track budget usage
+- View remaining budget
+- Monitor spending against budget limits
+
+### 📈 Reports & Analytics
+
+- Financial reports
+- Expense analysis by category
+- Monthly report filtering
+- Income and expense analysis
+- Transaction data visualization
+
+### 📥 Data Export
+
+- Export transactions to CSV
+
+### 👤 User Management
+
+- User profile
+- Application settings
+- Secure logout
 
 ---
 
@@ -49,10 +96,17 @@ Built with **React, TypeScript, Tailwind CSS, FastAPI, Python, SQLAlchemy, SQLit
 - SQLAlchemy
 - Pydantic
 - JWT Authentication
+- REST API
 
 ### Database
 
 - SQLite
+
+### Deployment
+
+- Vercel — Frontend
+- Render — Backend
+- GitHub — Source Code & Version Control
 
 ### Development Tools
 
@@ -61,6 +115,30 @@ Built with **React, TypeScript, Tailwind CSS, FastAPI, Python, SQLAlchemy, SQLit
 - GitHub
 - Swagger / FastAPI Docs
 
+---
+
+## 🏗️ Architecture
+
+```text
+User
+  │
+  ▼
+React + TypeScript Frontend
+  │
+  │ REST API / Axios
+  ▼
+FastAPI Backend
+  │
+  ├── JWT Authentication
+  ├── Transaction CRUD
+  ├── Budget Management
+  ├── Reports & Analytics
+  │
+  ▼
+SQLAlchemy
+  │
+  ▼
+SQLite Database
 
 ### Dashboard
 
