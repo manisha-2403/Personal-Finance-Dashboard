@@ -3,7 +3,7 @@ import axios from "axios";
 const api = axios.create({
   baseURL:
     import.meta.env.VITE_API_URL ||
-    "https://personal-finance-dashboard-d2xa.onrender.com",
+    "https://personal-finance-dashboard-rufd.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
@@ -19,9 +19,7 @@ api.interceptors.request.use(
 
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export default api;
